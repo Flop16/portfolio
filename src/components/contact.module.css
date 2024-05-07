@@ -1,0 +1,44 @@
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center; 
+    font-family: 'Gudea', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #D9D9D9;
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: rgba(37, 25, 43, 0.5); 
+    color: #D9D9D9;
+    border: none;
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    margin-left: 50px;
+}
+
+.button:hover {
+    background-color: #25192B;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+    width: 100%; 
+    }
+}
+  
