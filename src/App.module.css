@@ -3,11 +3,12 @@
   display: grid;
   place-content: center;
   font-size: 16px;
+
 }
+
 
 @media screen and (min-width: 768px) {
   .cursor {
-    display: block; 
     position: fixed;
     width: 20px;
     height: 20px;
@@ -21,11 +22,5 @@
 
   a:hover ~ .cursor {
     transform: scale(8);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cursor {
-    display: none; 
   }
 }
