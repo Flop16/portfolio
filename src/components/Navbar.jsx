@@ -8,7 +8,8 @@ const Navbar = () => {
   const expandedMenuLinkStyle = {
     backgroundColor: 'rgba(37, 25, 43, 0.6)', 
     color: '#D9D9D9', 
-    padding: '10px', 
+    padding: '20px', 
+    fontSize: '1.1em',
   };
 
   const menuLinkStyle = {
