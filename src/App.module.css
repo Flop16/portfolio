@@ -2,26 +2,10 @@
   text-align: center;
   display: grid;
   place-content: center;
-
-}
- /*
-a:hover ~ .cursor{
-  transform: scale(8);
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% de la altura de la ventana */
+  padding-bottom: 60px; /* Ajusta el espacio en la parte inferior para evitar que el pie de página se superponga al contenido */
 }
 
-
-.cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  border-radius: 50%;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  transform: scale(3);
-  transition: transform 0.1s ease;
-}
-*/ 
 
 @media screen and (min-width: 768px) {
   .cursor {
@@ -38,5 +22,11 @@ a:hover ~ .cursor{
 
   a:hover ~ .cursor {
     transform: scale(8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding-bottom: 120px; /* Aumenta el espacio en la parte inferior para dar cabida al pie de página en dispositivos móviles */
   }
 }

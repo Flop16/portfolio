@@ -14,7 +14,7 @@ const Navbar = () => {
   const menuLinkStyle = {
     color: '#D9D9D9', 
     fontFamily: 'Inder',
-    fontSize: '1.3rem',
+    fontSize: '1.5rem',
     marginRight: '40px',
   };
 

@@ -156,15 +156,20 @@ span {
 } 
 @media (max-width: 768px) {
     .portfolio {
-        height: auto; 
-        margin-top: 30vh; 
+        height: auto; /* Cambia la altura a automática en pantallas pequeñas */
+        width: 100%; /* Ajusta el ancho al 100% de la pantalla en dispositivos móviles */
+        max-width: 90%;
+        justify-content: center; /* Centra el contenido horizontalmente en dispositivos móviles */
+        align-items: center; /* Centra el contenido verticalmente en dispositivos móviles */
+        margin-top: 30vh;/* Ajustar el margen superior para centrarlo verticalmente */
     }
 
     .portfolio h1 {
-        font-size: 40px; 
+        font-size: 60px; /* Ajusta el tamaño del h1 en pantallas pequeñas */
+        margin-bottom: 10px; /* Reducir el margen inferior del h1 en dispositivos móviles */
     }
 
     .portfolio span {
-        font-size: 15px; 
+        font-size: 18px; /* Ajusta el tamaño del span en pantallas pequeñas */
     }
 }
