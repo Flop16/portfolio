@@ -4,7 +4,7 @@
   place-content: center;
 
 }
-
+ /*
 a:hover ~ .cursor{
   transform: scale(8);
 }
@@ -21,4 +21,22 @@ a:hover ~ .cursor{
   transform: scale(3);
   transition: transform 0.1s ease;
 }
+*/ 
 
+@media screen and (min-width: 768px) {
+  .cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: scale(3);
+    transition: transform 0.1s ease;
+  }
+
+  a:hover ~ .cursor {
+    transform: scale(8);
+  }
+}
