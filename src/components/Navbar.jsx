@@ -9,6 +9,115 @@ const Navbar = () => {
     backgroundColor: 'rgba(37, 25, 43, 0.6)', 
     color: '#D9D9D9', 
     padding: '20px', 
+    fontSize: '1.1em',
+  };
+
+  const menuLinkStyle = {
+    color: '#D9D9D9', 
+    fontFamily: 'Inder',
+    fontSize: '1.3rem',
+    marginRight: '40px',
+    position: 'relative', 
+    transition: 'color 0.5s ease-in-out'
+  }; 
+
+  const underlineStyle = {
+    position: 'absolute',
+    bottom: '-4px',
+    left: 0,
+    width: 0,
+    height: '2px',
+    backgroundColor: '#C48DEF',
+    transition: 'width 0.3s ease-in-out',
+  };
+
+  const handleMouseEnter = (e) => {
+    e.target.style.color = '#C48DEF'; 
+    e.target.querySelector('.underline').style.width = '30%'; 
+  };
+
+  const handleMouseLeave = (e) => {
+    e.target.style.color = '#D9D9D9'; 
+    const underline = e.target.querySelector('.underline');
+    if (underline) {
+      underline.style.width = '0'; 
+    }
+  };
+
+  return (
+    <div className={styles.customNavbarWrapper}>
+      <BootstrapNavbar expand="lg" expanded={expanded}>
+        <BootstrapNavbar.Brand href="/" className="custom-navbar-brand" style={{ fontSize: '2rem', fontWeight: 'bold', fontFamily: 'Kanit', color: '#D9D9D9', marginLeft: '40px' }}> FLO </BootstrapNavbar.Brand>
+        <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" style={{ background: '#D9D9D9' }} onClick={() => setExpanded(!expanded)} />
+        <BootstrapNavbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav className="ms-auto" style={{ marginRight: '20px' }}>
+            <Nav.Link 
+              href="/" 
+              className={`${styles.navLink} custom-nav-link`} 
+              style={expanded ? expandedMenuLinkStyle : menuLinkStyle} 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            > 
+              Inicio
+              <span className="underline" style={underlineStyle}></span> 
+            </Nav.Link>
+            <Nav.Link 
+              href="/about" 
+              className={`${styles.navLink} custom-nav-link`} 
+              style={expanded ? expandedMenuLinkStyle : menuLinkStyle} 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              Acerca de mí
+              <span className="underline" style={underlineStyle}></span> 
+            </Nav.Link>
+            <Nav.Link 
+              href="/project" 
+              className={`${styles.navLink} custom-nav-link`} 
+              style={expanded ? expandedMenuLinkStyle : menuLinkStyle} 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              Proyectos              
+              <span className="underline" style={underlineStyle}></span> 
+            </Nav.Link> 
+            <Nav.Link 
+              href="/contact" 
+              className={`${styles.navLink} custom-nav-link`} 
+              style={expanded ? expandedMenuLinkStyle : menuLinkStyle} 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              Contacto
+              <span className="underline" style={underlineStyle}></span> 
+            </Nav.Link>
+
+            </Nav>
+        </BootstrapNavbar.Collapse>
+      </BootstrapNavbar>
+    </div>
+  );
+};
+
+export default Navbar;
+
+
+
+
+
+/*
+
+import React, { useState } from "react";
+import styles from '../components/Navbar.module.css'; 
+import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap';
+
+const Navbar = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const expandedMenuLinkStyle = {
+    backgroundColor: 'rgba(37, 25, 43, 0.6)', 
+    color: '#D9D9D9', 
+    padding: '20px', 
     fontSize: '1rem',
   };
 
@@ -48,7 +157,7 @@ const Navbar = () => {
   return (
     <div className={styles.customNavbarWrapper}>
       <BootstrapNavbar expand="lg" expanded={expanded}>
-        <BootstrapNavbar.Brand href="/" className="custom-navbar-brand" style={{ fontSize: '2.2rem', fontWeight: 'bold', fontFamily: 'Kanit', color: '#D9D9D9', marginLeft: '60px' }}> FLO </BootstrapNavbar.Brand>
+        <BootstrapNavbar.Brand href="/" className="custom-navbar-brand" style={{ fontSize: '2.2rem', fontWeight: 'bold', fontFamily: 'Kanit', color: '#D9D9D9', marginLeft: '40px' }}> FLO </BootstrapNavbar.Brand>
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" style={{ background: '#D9D9D9' }} onClick={() => setExpanded(!expanded)} />
         <BootstrapNavbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ms-auto" style={{ marginRight: '20px' }}>
@@ -87,93 +196,6 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeave}
             >
               <span>Contacto<span className="underline" style={underlineStyle}></span></span>
-            </Nav.Link>
-          </Nav>
-        </BootstrapNavbar.Collapse>
-      </BootstrapNavbar>
-    </div>
-  );
-};
-
-export default Navbar;
-
-
-
-
-
-/*
-import React, { useState } from "react";
-import styles from '../components/Navbar.module.css'; 
-import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap';
-
-const Navbar = () => {
-  const [expanded, setExpanded] = useState(false);
-
-  const expandedMenuLinkStyle = {
-    backgroundColor: 'rgba(37, 25, 43, 0.6)', 
-    color: '#D9D9D9', 
-    padding: '20px', 
-    fontSize: '1.1em',
-  };
-
-  const menuLinkStyle = {
-    color: '#D9D9D9', 
-    fontFamily: 'Inder',
-    fontSize: '1.3rem',
-    marginRight: '40px',
-    transition: 'color 0.5s ease-in-out'
-  }; 
-
-  const handleMouseEnter = (e) => {
-    e.target.style.color = '#C48DEF'; 
-  };
-
-  const handleMouseLeave = (e) => {
-    e.target.style.color = '#D9D9D9';
-  };
-
-  return (
-    <div className={styles.customNavbarWrapper}>
-      <BootstrapNavbar expand="lg" expanded={expanded}>
-        <BootstrapNavbar.Brand href="/" className="custom-navbar-brand" style={{ fontSize: '2rem', fontWeight: 'bold', fontFamily: 'Kanit', color: '#D9D9D9', marginLeft: '60px' }}> FLO </BootstrapNavbar.Brand>
-        <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" style={{ background: '#D9D9D9' }} onClick={() => setExpanded(!expanded)} />
-        <BootstrapNavbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="ms-auto" style={{ marginRight: '20px' }}>
-            <Nav.Link 
-              href="/" 
-              className={`${styles.navLink} custom-nav-link`} 
-              style={{ ...menuLinkStyle, ...(expanded && expandedMenuLinkStyle) }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            > 
-              Inicio 
-            </Nav.Link>
-            <Nav.Link 
-              href="/about" 
-              className={`${styles.navLink} custom-nav-link`} 
-              style={{ ...menuLinkStyle, ...(expanded && expandedMenuLinkStyle) }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Acerca de mí
-            </Nav.Link>
-            <Nav.Link 
-              href="/projects" 
-              className={`${styles.navLink} custom-nav-link`} 
-              style={{ ...menuLinkStyle, ...(expanded && expandedMenuLinkStyle) }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Proyectos
-            </Nav.Link>
-            <Nav.Link 
-              href="/contact" 
-              className={`${styles.navLink} custom-nav-link`} 
-              style={{ ...menuLinkStyle, ...(expanded && expandedMenuLinkStyle) }}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Contacto
             </Nav.Link>
           </Nav>
         </BootstrapNavbar.Collapse>
