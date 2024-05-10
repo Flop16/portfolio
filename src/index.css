@@ -64,21 +64,22 @@ body {
   min-height: 100dvh; 
   display: grid;
   grid-template-rows: auto 1fr auto; 
-  background-image: url('../public/wallpaper.png');
+  background-image: url('../public/wallpaper.webp'), url('../public/wallpaper_respaldo.png');
   background-size: cover;
-  background-position: center center; 
+  background-position: center;
+  background-attachment: fixed;
   color: #D9D9D9;
 }
+
 
 footer {
   grid-row: 3; 
   color: #D9D9D9;
   padding: 20px;
   text-align: center;
-  position: fixed;
+  position: static; 
   bottom: 0;
   justify-self: center;
-  margin-top: 60px;
 }
 
 .spanFooter {
