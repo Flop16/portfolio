@@ -78,7 +78,7 @@ footer {
   position: fixed;
   bottom: 0;
   justify-self: center;
-  
+  margin-top: 60px;
 }
 
 .spanFooter {
