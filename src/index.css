@@ -64,7 +64,7 @@ body {
   min-height: 100dvh; 
   display: grid;
   grid-template-rows: auto 1fr auto; 
-  background-image: url('../public/wallpaper.webp'), url('../public/wallpaper_respaldo.png');
+  background-image: url('../public/wallpaper.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -77,9 +77,10 @@ footer {
   color: #D9D9D9;
   padding: 20px;
   text-align: center;
-  position: static; 
+  position: fixed;
   bottom: 0;
-  justify-self: center;
+  left: 0;
+  right: 0; 
 }
 
 .spanFooter {

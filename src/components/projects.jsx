@@ -27,6 +27,7 @@ const Project = () => {
             <h3><a href="https://sitio-pruebaqwik.netlify.app" target="_blank" rel="noopener noreferrer"><i className="bi bi-window"></i>&nbsp; Sitio prueba </a></h3>
             <p> Sitio base realizado en Qwik, para tener un primer acercamiento con este framework.</p>
           </div>
+          <div className="spacer"><br /></div>
         </div>
 
         </div>
