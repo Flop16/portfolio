@@ -4,3 +4,10 @@
     align-items: center; 
 }
 
+.Navlink custom-nav-link {
+    font-size: 1rem;
+}
+
+.expandedMenuLinkStyle {
+    font-size: 1rem;
+}

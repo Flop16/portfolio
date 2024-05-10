@@ -9,13 +9,13 @@ const Navbar = () => {
     backgroundColor: 'rgba(37, 25, 43, 0.6)', 
     color: '#D9D9D9', 
     padding: '20px', 
-    fontSize: '1em',
+    fontSize: '1rem',
   };
 
   const menuLinkStyle = {
     color: '#D9D9D9', 
     fontFamily: 'Inder',
-    fontSize: '1.5rem',
+    fontSize: '1.2rem',
     marginRight: '40px',
     textDecoration: 'none', 
     position: 'relative', 
@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className={styles.customNavbarWrapper}>
       <BootstrapNavbar expand="lg" expanded={expanded}>
-        <BootstrapNavbar.Brand href="/" className="custom-navbar-brand" style={{ fontSize: '2rem', fontWeight: 'bold', fontFamily: 'Kanit', color: '#D9D9D9', marginLeft: '60px' }}> FLO </BootstrapNavbar.Brand>
+        <BootstrapNavbar.Brand href="/" className="custom-navbar-brand" style={{ fontSize: '2.2rem', fontWeight: 'bold', fontFamily: 'Kanit', color: '#D9D9D9', marginLeft: '60px' }}> FLO </BootstrapNavbar.Brand>
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" style={{ background: '#D9D9D9' }} onClick={() => setExpanded(!expanded)} />
         <BootstrapNavbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ms-auto" style={{ marginRight: '20px' }}>
