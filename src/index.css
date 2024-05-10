@@ -86,10 +86,10 @@ footer {
   font-size: 15px;
 }
 
+
 @media only screen and (max-width: 1080px) {
   body {
-    margin: 70px;
-    justify-content: center;
+    margin: 20px;
     width: auto;
   }
 }

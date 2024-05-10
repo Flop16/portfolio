@@ -8,7 +8,40 @@
   
 }
 
+.selectingcolor {
+  color:aqua;
+}
 
+/*
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none; 
+  mix-blend-mode: difference;
+  transform: scale(2);
+  transition: transform 0.1s ease; 
+}
+
+.cursor a:hover {
+  transform: scale(8);
+}
+
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none; 
+  }
+}
+
+*/
+
+
+
+
+/*
 @media screen and (min-width: 768px) {
   .cursor {
     position: fixed;
@@ -26,3 +59,4 @@
     transform: scale(8);
   }
 }
+*/

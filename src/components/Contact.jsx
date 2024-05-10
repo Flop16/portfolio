@@ -13,7 +13,7 @@ const Contact = () => {
             <div className={styles.buttonContainer}>
               <a href="https://www.linkedin.com/in/florenciauehara/" className={styles.button} target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i>&nbsp; LinkedIn</a>
               <a href="https://github.com/Flop16" className={styles.button} target="_blank" rel="noopener noreferrer"><i className="bi bi-github"></i>&nbsp; GitHub</a>
-              <a href="mailto:florenciauehara@gmail.com" className={styles.button} target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope-fill"></i>&nbsp; ¡Escríbeme!</a>
+              <a href="mailto:florenciauehara@gmail.com" className={styles.button} target="_blank" rel="noopener noreferrer"><i className="bi bi-envelope-fill"></i>&nbsp; ¡Escríbeme!</a>
             </div>
         </div>
     </>
@@ -23,5 +23,5 @@ const Contact = () => {
 export default Contact;
 
 
-
+ 
 
