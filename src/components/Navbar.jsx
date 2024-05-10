@@ -72,7 +72,7 @@ const Navbar = () => {
               <span className="underline" style={underlineStyle}></span> 
             </Nav.Link>
             <Nav.Link 
-              href="/project" 
+              href="/projects" 
               className={`${styles.navLink} custom-nav-link`} 
               style={expanded ? expandedMenuLinkStyle : menuLinkStyle} 
               onMouseEnter={handleMouseEnter}
