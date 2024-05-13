@@ -72,8 +72,8 @@ body {
 }
 
 .navbar-toggler-icon {
-  font-size: 1rem; /* Tamaño personalizado */
-  border: none; /* Eliminar el borde */
+  font-size: 1rem; 
+  border: none; 
 }
 
 footer {

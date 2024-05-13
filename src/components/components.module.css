@@ -25,11 +25,13 @@ h1 {
     letter-spacing: 10px;
 }
 
-h2 {
+.about h2 {
     margin-top: 120px; 
     font-size: 3em;
-    margin-bottom: 50px;
-
+    margin-bottom: 70px;
+    font-family: 'Inder', sans-serif;
+    font-weight: bold;
+    color: #D9D9D9;
 }
 
 h3 {
@@ -37,9 +39,6 @@ h3 {
     font-weight: normal;
     margin-bottom: 60px;
     margin-top: 40px;
-}
-
-h2, h3 {
     font-family: 'Inder', sans-serif;
     font-weight: bold;
     color: #D9D9D9;
@@ -55,72 +54,15 @@ h2, h3 {
     font-size: 1.1em;
     color: #D9D9D9;
     text-align: justify; 
-    background-color: rgba(37, 25, 43, 0.5);
+    background-color: rgba(37, 25, 43, 0.8);
     max-width: 900px; 
     width: auto;
     margin: 20px;
     padding: 20px;
 }
-
 span {
     font-size: 25px;
 }
-
-.project p {
-    text-align: center; 
-    font-family: 'Gudea', sans-serif;
-    font-weight: normal;
-    font-size: 1.2em;
-    color: #D9D9D9;
-    text-align: center; 
-    background-color: rgba(37, 25, 43, 0.5);  /* sacarlo si es que se elige de la otra forma*/
-    margin: 20px;
-    padding: 20px;
-}
-
-
-.projectsWrapper {
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 60px;
-}
-
-.projectsWrapper h3 {
-    font-size: 23px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-
-.projectsWrapper p {
-    text-align: justify; 
-    font-size: 1.1em;
-    /* 
-    background-color: rgba(37, 25, 43, 0.5);
-    padding: 10px;
-    */
-}
-
-.projectsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; 
-    max-width: 1200px; 
-    width: 100%; 
-    
-}
-
-.pj1, .pj2, .pj3, .pj4 {
-  grid-column: span 1; 
-  grid-row: span 1; 
-  margin: 20px;
-  padding: 20px;
-}
-
-.projectsContainer .spacer {
-    height: 60px;
-    margin-bottom: 60px;
-}  
 
 @media (max-width: 768px) {
     .about {
@@ -128,7 +70,7 @@ span {
         flex-direction: column;
     }
     
-    h2 {
+    .about h2 {
         margin-top: 100px;
         font-size: 2.2em;
     }
@@ -142,31 +84,6 @@ span {
     }
     
 }
-  
-@media screen and (max-width: 768px) {
-    .projectsContainer {
-        grid-template-columns: 1fr; 
-        margin-bottom: 0;
-    }
-
-    .project p {
-        font-size: 1em;
-    }
-
-
-    .pj1, .pj2, .pj3, .pj4 {
-        padding: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    p {
-        font-size: 1.5em;
-    }
-    .space {
-        margin: 100px;
-    }
-} 
 
 @media (max-width: 768px) {
     .portfolio {
@@ -183,32 +100,13 @@ span {
 
     .portfolio span {
         font-size: 1em; 
-    }
-
-    
+    } 
 }
 
 @media only screen and (max-width: 1080px) {
-    .projectsContainer {
-        grid-template-columns: 1fr; 
-        margin-bottom: 0;
-    }
-
-    .project p {
-        font-size: 1em;
-    }
-
-
-    .pj1, .pj2, .pj3, .pj4 {
-        padding: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
     p {
         font-size: 2em;
     }
-
 
     .portfolio h1 {
         font-size: 3em; 
@@ -219,4 +117,3 @@ span {
         font-size: 1em; 
     }
 }
-
