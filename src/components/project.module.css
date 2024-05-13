@@ -39,7 +39,10 @@ h2 {
     margin-bottom: 30px;
 }
 
-.projectsContainer p {
+.projectsContainer .pj1 p,
+.projectsContainer .pj2 p,
+.projectsContainer .pj3 p,
+.projectsContainer .pj4 p {
     text-align: center; 
     font-family: 'Gudea', sans-serif;
     font-weight: normal;
@@ -68,8 +71,11 @@ h2 {
         margin-bottom: 50px;
     }
 
-    .projectsContainer p {
-        font-size: 0.9em;
+    .projectsContainer .pj1 p,
+    .projectsContainer .pj2 p,
+    .projectsContainer .pj3 p,
+    .projectsContainer .pj4 p  {
+        font-size: 1em;
     }
 
     .pj1, .pj2, .pj3, .pj4 {
@@ -82,6 +88,12 @@ h2 {
         margin-top: 50px; 
         font-size: 2em;
         margin-bottom: 60px;
+    }
+
+    .projectsContainer h3 {
+        font-size: 23px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     .project p {
@@ -113,6 +125,11 @@ h2 {
         margin-top: 50px; 
         font-size: 2.5em;
         margin-bottom: 60px;
+    }
+    .projectsContainer h3 {
+        font-size: 23px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
     .spacer {
         height: 60px;
